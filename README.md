@@ -50,8 +50,11 @@ A full-stack, responsive **Form Builder Web Application** built with **ReactJS**
 git clone <repository-url>
 cd form-builder-app
 
-### 2. Start the Application
-```bash
+
+Start the Application
+
+Separate terminals:
+
 # Backend
 cd backend
 npm run dev
