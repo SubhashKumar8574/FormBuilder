@@ -1,83 +1,63 @@
-# Form Builder Application
+# 📝 Form Builder App
 
-## Overview
-The Form Builder Application is a MERN stack project that allows users to create, manage, and analyze forms through a user-friendly interface. The application consists of a frontend built with React and a backend powered by Node.js and Express.
+A full-stack, responsive **Form Builder Web Application** built with **ReactJS**, **TypeScript**, **Node.js**, **Express**, and **MongoDB/PostgreSQL**. This app allows users to create, manage, and analyze forms through a clean dashboard with drag-and-drop form building, analytics, and full CRUD functionality.
 
-## Features
+---
+
+## 🔗 Features
 
 ### Frontend
-- **Dashboard**: Overview of forms and their statuses.
-- **Form Management**: Create, edit, delete, and duplicate forms.
-- **Form List View**: Display all forms with their status (draft/published), submission count, and creation date.
-- **Form Builder**: Drag-and-drop interface for adding field types (text, email, select, checkbox, radio, textarea, file upload).
-- **Field Configuration**: Set validation rules, required fields, placeholder text, and options for select/radio fields.
-- **Form Settings**: Configure title, description, custom thank you message, and submission limits.
-- **Analytics**: View submission counts, response charts, and export data to CSV.
-- **Preview Mode**: Test forms before publishing.
-- **Theme Support**: Switch between dark (Golden + Black) and light (White + Purple) themes.
+- 🏠 **Dashboard:** Overview of all forms and their statuses  
+- ✏️ **Form Management:** Create, edit, delete, and duplicate forms  
+- 📋 **Form List View:** Displays forms with status, submission count, and creation date  
+- 🛠️ **Form Builder:** Drag-and-drop interface for text, email, select, checkbox, radio, textarea, and file upload  
+- ⚙️ **Field Configuration:** Set validation rules, required fields, placeholders, and options  
+- 📝 **Form Settings:** Configure form title, description, custom thank-you messages, and submission limits  
+- 📊 **Analytics:** Submission count, response charts, and CSV export  
+- 👀 **Preview Mode:** Test forms before publishing  
+- 📤 **Form Submission:** Responsive public pages with validation, file uploads, and progress indicators  
 
 ### Backend
-- **API Endpoints**:
-  - **Forms**: CRUD operations for forms (`/api/forms`).
-  - **Submissions**: Create and retrieve submissions (`/api/forms/:id/submissions`).
-  - **File Upload**: Handle file storage (`/api/upload`).
-  - **Analytics**: Retrieve submission statistics (`/api/forms/:id/analytics`).
-  
-- **Core Features**:
-  - Server-side form validation.
-  - File storage (local or cloud) for uploads.
-  - Rate limiting to prevent spam submissions.
-  - CORS support for cross-origin requests.
-  - Structured error handling.
+- 🔌 **API Endpoints:** Manage forms, submissions, and file uploads  
+  - `/api/forms` – CRUD operations for forms  
+  - `/api/forms/:id/submissions` – Create/retrieve submissions  
+  - `/api/upload` – Handles file uploads  
+  - `/api/forms/:id/analytics` – Retrieve submission stats  
+- 🔒 **Core Features:** Server-side validation, file storage (local/cloud), rate limiting, CORS support, and structured error handling  
 
-## Technical Stack
-- **Frontend**: React 18, shadcn/ui, React Hook Form, Axios.
-- **Backend**: Node.js, Express, MongoDB, Multer (for file uploads).
+---
 
-## Getting Started
+## 🖼️ Screenshots
 
-### Prerequisites
-- Node.js
-- MongoDB
+### 🏠 Dashboard
+![Dashboard](./frontend/public/dashboard.png)
 
-### Installation
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd form-builder-app
-   ```
+---
 
-2. Install frontend dependencies:
-   ```
-   cd frontend
-   npm install
-   ```
+## ⚙️ Tech Stack
 
-3. Install backend dependencies:
-   ```
-   cd backend
-   npm install
-   ```
+| Frontend        | Backend       | Database        | Others                 |
+|-----------------|---------------|----------------|-----------------------|
+| ReactJS, TypeScript | Node.js, Express | MongoDB/PostgreSQL | shadcn/ui, React Hook Form, Axios, Multer |
 
-### Running the Application
+---
 
-1. Start the backend server:
-   ```
-   cd backend
-   npm start
-   ```
+## 🚀 How to Run Locally
 
-2. Start the frontend application:
-   ```
-   cd frontend
-   npm start
-   ```
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd form-builder-app
 
-The application will be available at `http://localhost:3000`.
+### 2. Start the Application
+```bash
+# Backend
+cd backend
+npm run dev
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+# Frontend
+cd frontend
+npm run dev
 
-## License
-This project is licensed under the MIT License.# FormBuilder
+
